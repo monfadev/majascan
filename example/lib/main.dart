@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:majascan/majascan.dart';
 
@@ -12,7 +12,7 @@ void main() => runApp(MaterialApp(
 class HomePage extends StatefulWidget {
   @override
   HomePageState createState() {
-    return new HomePageState();
+    return HomePageState();
   }
 }
 
@@ -21,11 +21,7 @@ class HomePageState extends State<HomePage> {
 
   Future _scanQR() async {
     try {
-      String? qrResult = await MajaScan.startScan(
-          title: "QRcode scanner",
-          titleColor: Colors.amberAccent[700],
-          qRCornerColor: Colors.orange,
-          qRScannerColor: Colors.orange);
+      String? qrResult = await MajaScan.startScan(title: "QRcode scanner", titleColor: Colors.amberAccent[700], qRCornerColor: Colors.orange, qRScannerColor: Colors.orange);
       setState(() {
         result = qrResult ?? 'null string';
       });
