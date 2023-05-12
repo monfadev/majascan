@@ -6,7 +6,7 @@ homepage: https://maja0270558.github.io/majascan_flutter/.
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
-  flutter: ">=1.10.0"
+  flutter: ">=1.17.0"
 
 dependencies:
   flutter:
