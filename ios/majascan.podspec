@@ -16,7 +16,7 @@ A new flutter plugin project.
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.swift_version = '5'
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '10.0'
   
   s.resource_bundles = {
       'majascanLocalizeBundle' => ['LocalizedStrings/*.lproj']
