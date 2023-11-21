@@ -26,7 +26,7 @@ class HomePageState extends State<HomePage> {
         result = qrResult ?? 'null string';
       });
     } on PlatformException catch (ex) {
-      if (ex.code == MajaScan.CameraAccessDenied) {
+      if (ex.code == MajaScan.cameraAccessDenied) {
         setState(() {
           result = "Camera permission was denied";
         });
